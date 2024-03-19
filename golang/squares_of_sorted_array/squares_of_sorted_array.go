@@ -2,11 +2,11 @@ package squaresofsortedarray
 
 import "sort"
 
-func SortedSquares(nums []int) []int {
-	var squares []int
-	for _, num := range nums {
+func sortedSquares(nums []int) []int {
+	squares := make([]int, len(nums))
+	for i, num := range nums {
 		square := num * num
-		squares = append(squares, square)
+		squares[i] = square
 	}
 	sort.IntSlice(squares).Sort()
 	return squares
