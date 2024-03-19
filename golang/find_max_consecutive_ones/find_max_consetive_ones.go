@@ -1,13 +1,13 @@
 package findmaxconsecutiveones
 
-func FindMaxConsecutiveOnes(nums []int) int {
-    var (
+func findMaxConsecutiveOnes(nums []int) int {
+	var (
 		maxConsecutiveOnes int
-		onesCount int
+		onesCount          int
 	)
-    for _, num := range nums {
+	for _, num := range nums {
 		if num == 1 {
-            onesCount++
+			onesCount++
 			if onesCount > maxConsecutiveOnes {
 				maxConsecutiveOnes = onesCount
 			}
@@ -15,5 +15,5 @@ func FindMaxConsecutiveOnes(nums []int) int {
 			onesCount = 0
 		}
 	}
-    return maxConsecutiveOnes
+	return maxConsecutiveOnes
 }
