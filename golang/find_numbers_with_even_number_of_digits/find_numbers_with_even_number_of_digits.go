@@ -1,6 +1,6 @@
 package findnumberswithevennumberofdigits
 
-func FindNumbers(nums []int) int {
+func findNumbers(nums []int) int {
 	var even_number_of_digits int
 	for _, num := range nums {
 		var (
